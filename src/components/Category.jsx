@@ -2,7 +2,7 @@ import {FaPizzaSlice,FaHamburger} from 'react-icons/fa';
 import {GiNoodles,GiChopsticks} from 'react-icons/gi';
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
-import "./Category.css"
+
 
 function Category() {
   return (
@@ -32,7 +32,6 @@ const List = styled.div`
     display:flex;
     justify-content:center;
     margin:2rem 0rem;
-    
 `
 const Slink = styled(NavLink)`
 display:flex;
@@ -52,11 +51,17 @@ transform:scale(0.8);
     h4{
         color:white;
         font-size:0.8rem;
+        @media(max-width:640px){
+            font-size:0.4rem;
+        }
 
     }
     svg{
         color:white;
         font-size:1.5rem;
+        @media(max-width:640px){
+            font-size:1rem;
+        }
 
     }
     &.active{
@@ -68,6 +73,13 @@ transform:scale(0.8);
             color:white;
         }
     }
+    @media (max-width: 640px) {
+    height: 3rem;
+    width: 3rem;
+    gap:3px;
+    margin:auto;
+    font-size: 0.5rem;
+  }
 
 `
 export default Category
