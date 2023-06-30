@@ -34,6 +34,11 @@ function Veggie() {
       <h3>Top Veg Picks</h3>
       <Splide options={{
         perPage:3,
+        breakpoints:{
+          640:{
+            perPage:1,
+          },
+        },
         arrows:false,
         pagination:false,
         drag:"free",

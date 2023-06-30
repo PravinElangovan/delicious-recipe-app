@@ -34,6 +34,11 @@ function Popular() {
       <h3>Trending..</h3>
       <Splide options={{
         perPage:4,
+        breakpoints:{
+          640:{
+            perPage:1,
+          },
+        },
         arrows:false,
         pagination:false,
         drag:"free",
